@@ -1,8 +1,7 @@
-#board {
-    display: block;
-    width: 400px;
-    height: 400px;
-    background-color: black;
-    margin: 20px auto;
-    cursor: crosshair; /* Muda o cursor para uma cruz ao passar sobre a lousa */
+canvas {
+    border: 2px solid black;
+    background-color: yellow;
+}
+h3 {
+    color: green;
 }
