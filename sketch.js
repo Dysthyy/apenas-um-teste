@@ -1,28 +1,12 @@
-// Variáveis para armazenar as coordenadas do clique inicial
-let painting = false;
-let lastX = 0;
-let lastY = 0;
-
 function setup() {
-    createCanvas(500, 500);
+    createCanvas(400, 400); // Cria uma lousa de 400x400 pixels
+    background(0); // Define o fundo preto
 }
 
 function draw() {
-    if (painting) {
-        stroke(0); // Cor do traço (preto)
-        strokeWeight(2); // Espessura do traço
-        line(lastX, lastY, mouseX, mouseY); // Desenha uma linha do último ponto ao ponto atual
-        lastX = mouseX;
-        lastY = mouseY;
+    if (mouseIsPressed) { // Se o mouse estiver pressionado
+        stroke(255); // Cor do traço branca
+        strokeWeight(5); // Espessura do traço
+        line(pmouseX, pmouseY, mouseX, mouseY); // Desenha uma linha do último ponto ao ponto atual
     }
-}
-
-function mousePressed() {
-    painting = true;
-    lastX = mouseX;
-    lastY = mouseY;
-}
-
-function mouseReleased() {
-    painting = false;
 }
