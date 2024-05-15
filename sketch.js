@@ -1,5 +1,8 @@
+let canvas;
+
 function setup() {
-    createCanvas(400, 400); // Cria uma lousa de 400x400 pixels
+    canvas = createCanvas(400, 400); // Cria uma lousa de 400x400 pixels
+    canvas.parent('board'); // Define o pai do canvas como o elemento com o id "board"
     background(0); // Define o fundo preto
 }
 
