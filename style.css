@@ -1,4 +1,7 @@
-canvas {
-    border: 1px solid black;
-    cursor: crosshair; /* Muda o cursor para uma cruz ao passar sobre o canvas */
+#board {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    margin: 20px auto;
+    cursor: crosshair; /* Muda o cursor para uma cruz ao passar sobre a lousa */
 }
