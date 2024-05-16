@@ -1,7 +1,42 @@
-canvas {
-    border: 2px solid black;
-    background-color: yellow;
+*{
+    box-sizing: border-box;
 }
-h3 {
-    color: green;
+
+body{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+canvas{
+  border: 2px solid rgb(15, 255, 7);
+}
+
+.toolbox{
+  background-color: rgb(15, 255, 7);
+  border: 1px solid rgb(15, 255, 7);
+  display: flex;
+  padding: 1rem;
+  width: 505px;
+}
+
+.toolbox > *{
+  background-color: white;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: .25rem;
+  margin: .25rem;
+  height: 45px;
+  width: 50px;
+}
+
+.toolbox > *:last-child{
+  margin-left: auto;
 }
